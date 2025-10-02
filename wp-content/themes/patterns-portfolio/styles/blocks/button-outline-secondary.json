@@ -1,0 +1,19 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Secondary Outline",
+	"slug": "button-outline-secondary",
+	"blockTypes": ["core/button"],
+	"styles": {
+		"border": {
+			"color": "currentColor",
+			"style": "solid",
+			"width": "1px"
+		},
+		"color": {
+			"background": "transparent",
+			"text": "var:preset|color|secondary"
+		},
+		"css": "&:hover{background:var(--wp--preset--color--secondary);color: var(--wp--preset--color--default);}"
+	}
+}

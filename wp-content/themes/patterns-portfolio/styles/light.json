@@ -1,0 +1,155 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Light",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#212529",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#F8FAFC",
+					"name": "Default",
+					"slug": "default"
+				},
+				{
+					"color": "#343A40",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#9AA6B2",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#495057",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#6C757D",
+					"name": "Quaternary",
+					"slug": "quaternary"
+				},
+				{
+					"colors": ["#DBDBDB", "#DBDBDB"],
+					"slug": "quinary",
+					"name": "Quinary"
+				},
+				{
+					"color": "#6C757D",
+					"name": "Accent",
+					"slug": "accent"
+				}
+			],
+			"duotone": [
+				{
+					"colors": ["#212529", "#212529"],
+					"slug": "base",
+					"name": "Base"
+				},
+				{
+					"colors": ["#fff", "#fff"],
+					"slug": "default",
+					"name": "Default"
+				},
+				{
+					"colors": ["#343A40", "#343A40"],
+					"slug": "primary",
+					"name": "Primary"
+				},
+				{
+					"colors": ["#9AA6B2", "#9AA6B2"],
+					"slug": "secondary",
+					"name": "Secondary"
+				},
+				{
+					"colors": ["#495057", "#495057"],
+					"slug": "tertiary",
+					"name": "Tertiary"
+				},
+				{
+					"colors": ["#6C757D", "#6C757D"],
+					"slug": "quaternary",
+					"name": "Quaternary"
+				},
+				{
+					"colors": ["#DBDBDB", "#DBDBDB"],
+					"slug": "quinary",
+					"name": "Quinary"
+				},
+
+				{
+					"colors": ["#6C757D", "#6C757D"],
+					"slug": "accent",
+					"name": "Accent"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				":hover": {
+					"color": {
+						"background": "var:preset|color|tertiary"
+					}
+				},
+				":focus": {
+					"color": {
+						"background": "var:preset|color|tertiary"
+					}
+				},
+				":active": {
+					"color": {
+						"background": "var:preset|color|tertiary"
+					}
+				},
+				":visited": {
+					"color": {
+						"text": "var:preset|color|base"
+					}
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var:preset|color|primary"
+				}
+			},
+
+			"link": {
+				":active": {
+					"color": {
+						"text": "var:preset|color|primary"
+					}
+				}
+			}
+		},
+		"blocks": {
+			"core/button": {
+				"variations": {
+					"outline": {
+						"elements": {
+							"link": {
+								":hover": {
+									"border": {
+										"color": "var:preset|color|base"
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			"core/post-title": {
+				"color": {
+					"text": "var:preset|color|primary"
+				}
+			}
+		}
+	}
+}
