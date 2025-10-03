@@ -1,0 +1,33 @@
+.falling-petals {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.falling-petals .petal {
+    position: absolute;
+    top: -10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fall linear infinite;
+}
+
+.falling-petals .petal.petal1 {
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) translateX(var(--wind)) rotate(var(--rotate));
+        opacity: 0.5;
+    }
+}
