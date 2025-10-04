@@ -11,7 +11,7 @@ export default function Welcome() {
     return (
         <div className="flex flex-col min-h-screen">
             <Header/>
-            <BigPost title="" text="" />
+            <BigPost title="Ya aprobamos el 25%!!!" text="Buenas noticias, aprobamos el primer sprint funcional, y muy bien. No solo cumplimos con todas las funcionalidades que habiamos planteado, sino que tambíen entregamos una funcionaldiad por adelantado! Nada mal eh?" />
         </div>
     );
 }

@@ -11,7 +11,7 @@ export default function Welcome() {
     return (
         <div className="flex flex-col min-h-screen">
             <Header/>
-            <BigPost title="" text="" />
+            <BigPost title="Herramientas utilizadas" text='Obviamente no podemos hacer el juego con nuestras propias manos. Aca les dejamos una lista de todas las herramientas que utilizamos durante su creación, y puede que aumente: -laravel -react -xampp -useAudio.' />
         </div>
     );
 }

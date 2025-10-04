@@ -11,7 +11,7 @@ export default function Welcome() {
     return (
         <div className="flex flex-col min-h-screen">
             <Header/>
-            <BigPost title="" text="" />
+            <BigPost title="Quienes Somos?" text='Somos estudiantes de ultimo año en la carrera "Desarollo Web" de la Universidad del Comahue. Hace tiempo que venimos disfrutando de los juegos auto-battler, y decidimos hacer el nuestro. '/>
         </div>
     );
 }
