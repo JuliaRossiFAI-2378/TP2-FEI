@@ -5,6 +5,7 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { createRoot } from 'react-dom/client';
 import { initializeTheme } from './hooks/use-appearance';
 import MusicButton from './components/MusicToggle';
+import OverlayVideo from '@/components/OverlayVideo';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
@@ -20,6 +21,7 @@ createInertiaApp({
 
         root.render(
         <>
+            <OverlayVideo/>
             <App {...props} />
             <MusicButton/>
         </>
