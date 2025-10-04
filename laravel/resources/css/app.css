@@ -137,4 +137,16 @@
     body {
         @apply text-foreground;
     }
+body{
+    background-image: url(../../public/bricks2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header{
+    background-image: url(../../public/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 }

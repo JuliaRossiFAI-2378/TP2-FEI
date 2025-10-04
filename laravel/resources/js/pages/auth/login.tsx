@@ -10,6 +10,7 @@ import { register } from '@/routes';
 import { request } from '@/routes/password';
 import { Form, Head } from '@inertiajs/react';
 import { LoaderCircle } from 'lucide-react';
+import Header from '@/components/Header';
 
 interface LoginProps {
     status?: string;
@@ -18,12 +19,10 @@ interface LoginProps {
 
 export default function Login({ status, canResetPassword }: LoginProps) {
     return (
-        <AuthLayout
-            title="Log in to your account"
-            description="Enter your email and password below to log in"
-        >
-            <Head title="Log in"  />
-
+        <div className="flex flex-col min-h-screen">
+                    <Header/>
+                    <div className="flex-grow flex flex-row flex-wrap justify-center items-start gap-6 p-8 px-20">
+                        <div className="bg-indigo-950/70 shadow-2xl text-left rounded w-xl max-w-xl p-6 flex flex-col items-stretch justify-center gap-4 saturate-50">
             <Form
                 {...AuthenticatedSessionController.store.form()}
                 resetOnSuccess={['password']}
@@ -110,6 +109,8 @@ export default function Login({ status, canResetPassword }: LoginProps) {
                     {status}
                 </div>
             )}
-        </AuthLayout>
+        </div>
+        </div>
+        </div>
     );
 }

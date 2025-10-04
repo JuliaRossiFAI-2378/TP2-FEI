@@ -9,14 +9,14 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import AuthLayout from '@/layouts/auth-layout';
+import Header from '@/components/Header';
 
 export default function Register() {
     return (
-        <AuthLayout
-            title="Create an account"
-            description="Enter your details below to create your account"
-        >
-            <Head title="Register" />
+        <div className="flex flex-col min-h-screen">
+                    <Header/>
+                    <div className="flex-grow flex flex-row flex-wrap justify-center items-start gap-6 p-8 px-20">
+                        <div className="bg-indigo-950/70 shadow-2xl text-left rounded w-xl max-w-xl p-6 flex flex-col items-stretch justify-center gap-4 saturate-50">
             <Form
                 {...RegisteredUserController.store.form()}
                 resetOnSuccess={['password', 'password_confirmation']}
@@ -112,6 +112,8 @@ export default function Register() {
                     </>
                 )}
             </Form>
-        </AuthLayout>
+            </div>
+            </div>
+        </div>
     );
 }
