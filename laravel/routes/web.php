@@ -10,6 +10,6 @@ Route::get('/', function () {
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('landing', function () { return Inertia::render('landing'); })->name('landing');
 });
-
+Route::get('FAQ', function () { return Inertia::render('FAQ'); })->name('FAQ');
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
