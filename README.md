@@ -20,9 +20,10 @@ Una vez instaladas las herramientas ejecutar el editor de codigo, abrir una term
 Guia de instalacion de wordpress:
 <br/><br/>
 1. Ubicar la terminal en el directorio deseado para instalar el proyecto y clonar el repositorio ejecutando en consola el comando:
+<br/><br/>
 <b>IMPORTANTE: si bien la carpeta "laravel" puede ser instalada en cualquier directorio, el resto de los archivos 
 deben ser ubicados en una carpeta llamada "wordpress" dentro del directorio "htdocs" de xampp (normalmente la ubicacion del mismo es
-C:\xampp\htdocs).</b><br/>
+C:\xampp\htdocs).</b><br/><br/>
 
 ```bash
 git clone https://github.com/JuliaRossiFAI-2378/TP2-FEI.git
