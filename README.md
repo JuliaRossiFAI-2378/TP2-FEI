@@ -18,11 +18,11 @@ Una vez instaladas las herramientas ejecutar el editor de codigo, abrir una term
 
 <br/>
 Guia de instalacion de wordpress:
-<br/>
+<br/><br/>
 1. Ubicar la terminal en el directorio deseado para instalar el proyecto y clonar el repositorio ejecutando en consola el comando:
 <b>IMPORTANTE: si bien la carpeta "laravel" puede ser instalada en cualquier directorio, el resto de los archivos 
 deben ser ubicados en una carpeta llamada "wordpress" dentro del directorio "htdocs" de xampp (normalmente la ubicacion del mismo es
-C:\xampp\htdocs).</b>
+C:\xampp\htdocs).</b><br/>
 
 ```bash
 git clone https://github.com/JuliaRossiFAI-2378/TP2-FEI.git
@@ -61,30 +61,47 @@ npm install
 cp .env.example .env
 ```
 
-5. Generar la clave de la aplicación:
+5. En el mismo archivo <i><b>.env</b></i> cambiar la linea que dice "APP_URL" para que quede lo siguiente
+```bash
+APP_URL=http://localhost:8000/
+```
+
+6. Generar la clave de la aplicación:
 
 ```bash
 php artisan key:generate
 ```
 
-6. En caso de que lo haya cerrado, abrir el panel de XAMPP e iniciar los servicios "Apache" y "MySql".
+7. En caso de que lo haya cerrado, abrir el panel de XAMPP e iniciar los servicios "Apache" y "MySql".
 
-7. Migrar la base de datos ejecutando el comando:
+8. Migrar la base de datos ejecutando el comando:
 
 ```bash
 php artisan migrate
 ```
 
-8. Laravel pregunta si desea crear la base de datos, conteste:
+9. Laravel pregunta si desea crear la base de datos, conteste:
 
 ```bash
 yes
 ```
 
-9. Poblar la base de datos:
+10. Poblar la base de datos:
 
 ```bash
 php artisan db:seed
+```
+
+11. Utilizar el siguiente comando:
+
+```bash
+npm run build
+```
+
+12. Para correr la aplicacion utilice el siguiente comando y luego dirigase a "localhost:8000/"
+
+```bash
+composer run dev
 ```
 
 <br/>
